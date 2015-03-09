@@ -19,7 +19,14 @@
 # and when you think it is correct, you can test it with  $ rake 2:2
 
 def hi_hi_goodbye
-  # your code here
+
+  puts "Enter a number kid:"
+  while response = gets
+  response.to_i.times {print "hi "}
+  puts "\nEnter a number kid:"
+  break if response.chomp == "bye" 
+	end
+	puts "goodbye"
 
 end
 
