@@ -14,3 +14,11 @@
 #
 # mod_three [0,1,2,3,4,5,6,7] # => [1, 2, 1, 2, 1]
 
+def mod_three(numbers)
+	 # array to hold specified values
+	numbers.delete_if {|n| n % 3 == 0}.map {|e| e % 3} # delete objects from array, that are divisible by three. From what is left, divide each by 3 and store remainder in new_array variable
+	
+end
+
+# mod_three([0,1,2,3,4,5,6,7]) # => [[1, 2, 1, 2, 1]]
+# ~> -:23:in `<main>': undefined local variable or method `new_array' for main:Object (NameError)
