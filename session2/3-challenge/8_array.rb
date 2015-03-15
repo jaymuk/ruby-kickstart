@@ -6,3 +6,16 @@
 # got_three? ['a', 'a', 'a']  # => true
 # got_three? [1, 2, 1, 1]     # => false
 
+
+
+def got_three?(elements)
+	
+	elements.each_cons(3) do |a, b, c|
+	return true if a == b && b == c 
+	end
+	false
+	
+end
+
+#got_three? [1, 2, 2, 2, 3]  # => false
+# ~> -:22: syntax error, unexpected end-of-input, expecting keyword_end
