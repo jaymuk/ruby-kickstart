@@ -15,3 +15,12 @@
 # prime_chars? ['a', 'bcd']       # => false
 # prime_chars? ['a', 'b', 'cd']   # => false
 
+def prime_chars?(chars)
+	this_prime = chars.join('').length
+	return true if this_prime % 2 != 0
+	return false if this_prime % 2 == 0
+end
+
+
+# prime_chars? ['a', 'b', 'cd'] # => false
+# ~> 	                                 ^
